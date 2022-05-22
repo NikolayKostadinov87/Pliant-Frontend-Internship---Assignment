@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+
+        <!-- TITLE OF THE WEBSITE -->
+        <title>Ghost Host</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- INSERTING THE STYLING OF THE MAIN PAGE -->
+        <link rel="stylesheet" href="MainPageStyling.css">
+        <!-- INSERTING THE STYLING FOR THE ABOUT US SECTION -->
+        <link rel="stylesheet" href="AboutUsStyling.css">
+        <!-- INSERTING THE STYLING OF THE CAROUSEL -->
+        <link rel="stylesheet" href="CarouselStyling.css">
+        <!-- INSERTING THE STYLING OF THE SERVICES SECTION -->
+        <link rel="stylesheet" href="ServicesStyling.css">
+        <!-- INSERTING THE STYLING FOR THE CONTACTS SECTION -->
+        <link rel="stylesheet" href="ContactsStyling.css">
+
+        <!-- USING THE FONT-AWESOME LIBRARY AS MENTIONED IN THE TAKS DESCRIPTION -->
+        <script src="https://kit.fontawesome.com/58fefdea82.js" crossorigin="anonymous"></script>
+
+        <script src="Carousel.js"></script>
+
+    </head>
+    
+    <body>
+
+        <!-- ---HOME PAGE SECTION--- | ---MAIN SCREEN--- -->
+        <section class="homePage" id="sectionHomePage">
+
+            <div id="homePageContainer">
+                <!-- NAVIGATION BAR -->
+                <nav id="navigationBar">
+
+                    <!-- HAMBURGER BUTTON  -->
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <i class="fas fa-bars"></i>
+                    </label>
+
+                    <!-- LOGO PICTURE OF GHOST HOST -->
+                    <img src="logo.png" id="logoPicture">
+
+                    <!-- NAVIGATION BAR'S SECTIONS -->
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Domain</a></li>
+                        <li><a href="#">Hosting</a></li>
+                        <li><a href="#">Clients</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </nav>
+
+                <!-- LOGIN BUTTON -->
+                <button class="loginButton" id="loginButton">
+                    Login
+                </button>
+
+                <!-- REGISTER BUTTON -->
+                <button class="registerButton" id="registerButton">
+                    Register
+                </button>
+
+                <!-- MAIN MESSAGE  -->
+                <div class="messageHomePage" id="centerTextPrimary">
+                    <h1>Hello!</h1>
+                </div>
+
+                <!-- FIRST SECONDARY MESSAGE -->
+                <div class="messageHomePage" id="centerTextFirstSecondary">
+                    <h5>We love our work...</h5>
+                </div>
+
+                <!-- SECOND SECONDARY MESSAGE -->
+                <div class="messageHomePage" id="centerTextSecondSecondary">
+                    <h5>And We're taking it seriously...</h5>
+                </div>
+
+            </div>
+
+        </section>
+        
+        <!-- ---ABOUT US SECTION--- -->
+        <section class="aboutUs" id="sectionAboutUs">
+
+            <!-- MAIN CONTAINER FOR ABOUT US SECTION -->
+            <div id="aboutUsContainer">
+
+                <!-- LEFT SIDE -->
+                <div class="aboutUsContainerDivs" id="leftSide">
+                    <!-- LEFT SIDE MAIN DIV -->
+                    <div id="leftSideDescription">
+
+                        <!-- TITLE -->
+                        <span id="leftSideDescriptionTitle">About Us</span>
+
+                        <!-- DESCRIPTION -->
+                        Lorem ipsum, dolor sit 
+                        amet consectetur adipisicing elit. 
+                        Est eveniet nam sequi exercitationem 
+                        harum eaque repudiandae beatae placeat 
+                        reprehenderit aperiam minus earum, eius
+                        expedita aut. Libero ut ad laudantium est?
+
+                    </div>
+                    
+                </div>
+
+                <!-- RIGHT SECTION -->
+                <div class="aboutUsContainerDivs" id="rightSide">
+
+                    <!-- FIRST DESIGNER -->
+                    <div class="aboutUsImages" id="aboutUsImageFirst">
+
+                        <!-- IMAGE OF FIRST DESIGNER -->
+                        <img class="AUImages" src="team-1.png">
+
+                        <!-- NAME OF FIRST DESIGNER -->
+                        <span class="AUTitleDesigner">Jonny Doe</span>
+                        <!-- DESCRIPTION OF FIRST DESIGNER -->
+                        <span class="AUDescriptionDesigner">Designer</span>
+
+                        <!-- SOCIAL NETWORK -->
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-solid fa-link"></i>
+
+                    </div>
+
+                    <!-- THIRD DESIGNER -->
+                    <div class="aboutUsImages" id="aboutUsImageThird">
+
+                        <!-- IMAGE OF THIRD DESIGNER -->
+                        <img class="AUImages" src="team-3.png">
+
+                        <!-- NAME OF THIRD DESIGNER -->
+                        <span class="AUTitleDesigner">Johnathan Doe</span>
+                        <!-- DESCRIPTION OF THIRD DESIGNER -->
+                        <span class="AUDescriptionDesigner">Designer</span>
+
+                        <!-- SOCIAL NETWORK -->
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-solid fa-link"></i>
+
+                    </div>
+
+                    <!-- SECOND DESIGNER -->
+                    <div class="aboutUsImages" id="aboutUsImageSecond">
+
+                        <!-- IMAGE OF SECOND DESIGNER -->
+                        <img class="AUImages" src="team-2.png">
+
+                        <!-- NAME OF SECOND DESIGNER -->
+                        <span class="AUTitleDesigner">John Doe</span>
+                        <!-- DESCRIPTION OF SECOND DESIGNER -->
+                        <span class="AUDescriptionDesigner">Designer</span>
+
+                        <!-- SOCIAL NETWORK -->
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-solid fa-link"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CAROUSEL SECTION -->
+        <section class="carouselClass" id="sectionCarousel">
+
+            <!-- MAIN CAROUSEL SECTION CONTAINER -->
+            <div class="carouselContainer">
+
+                <!-- SLIDES DIV CONTAINER -->
+                <div class="innerCarouselContainer">
+        
+                <!-- FIRST SLIDE -->
+                <div class="carouselSlides">
+
+                    <!-- FIRST SLIDE IMAGE -->
+                    <img class="carouselImage" src='carousel_image_1.jpg' style='width: 100%;' />
+
+                    <!-- FIRST SLIDE TITLE -->
+                    <div class="carouselTitle">John</div>
+
+                    <!-- FIRST SLIDE DESCRIPTION -->
+                    <div class="carouselTextOfDesigner">
+                        "Lorem consectetur amet sit  ipsum dolor adipisicing elit."
+                    </div>
+
+                </div>
+        
+                <!-- SECOND SLIDE -->
+                <div class="carouselSlides">
+
+                    <!-- SECOND SLIDE IMAGE -->
+                    <img class="carouselImage" src='carousel_image_2.jpg' style='width: 100%;' />
+
+                    <!-- SECOND SLIDE TITLE -->
+                    <div class="carouselTitle">Jonny</div>
+                    
+                    <!-- SECOND SLIDE DESCRIPTION -->
+                    <div class="carouselTextOfDesigner">
+                        "Lorem amet ipsum  adipisicing elit consectetur dolor sit ."
+                    </div>
+
+                </div>
+        
+                <!-- THIRD SLIDE -->
+                <div class="carouselSlides">
+                    
+                    <!-- THIRD SLIDE IMAGE -->
+                    <img class="carouselImage" src='carousel_image_3.jpg' style='width: 100%;' />
+
+                    <!-- THIRD SLIDE TITLE -->
+                    <div class="carouselTitle">Johnathan</div>
+
+                        <!-- THIRD SLIDE DESCRIPTION -->
+                    <div class="carouselTextOfDesigner">
+                        "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                    </div>
+
+                </div>
+
+                <!-- DOTS ON THE CAROUSEL -->
+                <div style='text-align: center;'>
+
+                    <!-- FIRST DOT -->
+                    <span class="carouselDots" id="carouselDot1" onclick='currentSlide(1)'></span>
+
+                    <!-- SECOND DOT -->
+                    <span class="carouselDots" id="carouselDot2" onclick='currentSlide(2)'></span>
+
+                    <!-- THIRD DOT -->
+                    <span class="carouselDots" id="carouselDot3" onclick='currentSlide(3)'></span>
+
+                </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section class="servicesClass" id="servicesSection">
+
+            <!-- SERVICES MAIN DIV CONTAINER -->
+            <div class="servicesContainer" id="idServicesContainer">
+
+                <!-- FIRST DESCRIPTON SECTION -->
+                <div class="servicesDescriptionDivs" id="servicesDescriptionFirst">
+
+                    <!-- BOLD FONT IMAGE -->
+                    <i class="servicesIcons fa-solid fa-bolt" id="bold"></i>
+
+                    <!-- TITLE -->
+                    <span class="servicesTitle" id="boldTitle">
+                        <h5>Fast Servers</h5>
+                    </span>
+
+                    <!-- DESCRIPTION -->
+                    <span class="servicesDescriptionText" id="boldDescriptions">
+                        Lorem ipsum amet consectetur.
+                    </span>
+
+                </div>
+
+                <!-- SECOND DESCRIPTON SECTION -->
+                <div class="servicesDescriptionDivs" id="servicesDescriptionSecond">
+
+                    <!-- BOLD FONT IMAGE -->
+                    <i class="servicesIcons fa-solid fa-cloud" id="cloud"></i>
+                    
+                    <!-- TITLE -->
+                    <span class="servicesTitle" id="cloudTitle">
+                        <h5>Cloud Servers</h5>
+                    </span>
+
+
+                    <!-- DESCRIPTION -->
+                    <span class="servicesDescriptionText" id="cloudDescriptions">
+                        Lorem ipsum amet consectetur.
+                    </span>
+
+                </div>
+
+                <!-- THIRD DESCRIPTON SECTION -->
+                <div class="servicesDescriptionDivs" id="servicesDescriptionThird">
+
+                    <i class="servicesIcons fa-solid fa-arrow-down-up-across-line" id="directions"></i>
+
+                    <!-- TITLE -->
+                    <span class="servicesTitle" id="directionsTitle">
+                        <h5>Domain Transfer</h5>
+                    </span>
+
+                    <!-- DESCRIPTION -->
+                    <span class="servicesDescriptionText" id="directionsDescriptions">
+                        Lorem ipsum amet consectetur.
+                    </span>
+
+                </div>
+
+                <!-- FOURTH DESCRIPTON SECTION -->
+                <div class="servicesDescriptionDivs" id="servicesDescriptionFourth">
+                    
+                    <i class="servicesIcons fa-solid fa-comments" id="comments"></i>
+
+                    <!-- TITLE -->
+                    <span class="servicesTitle" id="commentsTitle">
+                        <h5>Live Support</h5>
+                    </span>
+
+                    <!-- DESCRIPTION -->
+                    <span class="servicesDescriptionText" id="commentsDescriptions">
+                        Lorem ipsum amet consectetur.
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CONTACTS SECTION -->
+        <section class="contactsSection" id="contactsSectionId">
+
+            <!-- CONTACTS SECTION MAIN DIV -->
+            <div class="contactsSectionMainDiv" id="contactsSectionMainDivId">
+
+                <!-- LEFT SECTION -->
+                <div class="contactSection" id="contactsLeftSection">
+
+                    <!-- DESCRIPTION -->
+                    <div id="contactsLeftSectionDescription">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Similique obcaecati praesentium impedit dolorum culpa magnam
+                        itaque tenetur cumque rem vitae vel quam.
+                    </div>
+
+                    <!-- DESIGNER'S NAME -->
+                    <div id="contactsLeftSectionDesigner">
+                        Design by Nikolay Kostadinov
+                    </div>
+
+                </div>
+                
+                <!-- RIGHT SECTION -->
+                <div class="contactSection" id="contactsRightSection">
+
+                    <!-- PHONE -->
+                    <div class="contactsRightSectionElements" id="contactsRightSectionPhone">
+                        <i class="fa-solid fa-square-phone"></i>
+                        <a href="tel:0000-0000-0000">0000-0000-0000</a>
+                    </div>
+
+                    <!-- MAIL -->
+                    <div class="contactsRightSectionElements" id="contactsRightSectionMail">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:informationteam@ghosthost.com">informationteam@ghosthost.com</a>
+
+                    </div>
+
+                    <!-- DESCRIPTIONS -->
+                    <div class="contactsRightSectionElements" id="contactsRightSectionDescription1">Lorem ipsum Street , Lorem Avenue</div>
+                    <div class="contactsRightSectionElements" id="contactsRightSectionDescription2">Lorem Ipsum </div>
+                    
+                </div>
+                
+                <!-- CENTER SECTION -->
+                <div class="contactSection" id="contactsCenterSection">
+
+                    <!-- LEFT COLUMN OF THE CENTER SECTION -->
+                    <div class="contactsCenterColumns" id="contactsCenterLeftColumn">
+                        <span id="spanSupport">Support</span>
+                        <span id="spanAccount">Account</span>
+                        <span id="spanProductCatalog">Product Catalog</span>
+                        <span id="spanShortCodes">Shortcodes</span>
+                    </div>
+
+                    <!-- RIGHT COLUMN OF THE CENTER SECTION -->
+                    <div class="contactsCenterColumns" id="contactsCenterRightColumn">
+                        <span id="spanSiteMap">Site Map</span>
+                        <span id="spanWhoisSearch">Whois Search</span>
+                        <span id="spanWebMail">Web Mail</span>
+                        <span id="spanFindDomain">Find Domain</span>
+                    </div>
+                
+                </div>
+
+            </div>
+
+        </section>
+
+        
+    </body>
+</html>
