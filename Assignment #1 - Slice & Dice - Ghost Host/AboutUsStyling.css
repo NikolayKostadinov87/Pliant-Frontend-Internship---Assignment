@@ -1,0 +1,101 @@
+
+/* MAIN DIV CONTAINER OF ABOUT US SECTION */
+#aboutUsContainer{
+    height: 60vh;
+    width: 100%;
+}
+
+/* LEFT SIDE OF ABOUT US SECTION */
+#leftSide{
+    float: left; 
+    width: 40%;
+
+}
+
+/* RIGHT SIDE OF ABOUT US SECTION */
+#rightSide{
+    float: right;
+    width: 60%;
+}
+
+/* LEFT SIDE DESCRIPTION */
+#leftSideDescription{
+    margin-top: 18%;
+    margin-left: 20%;
+    justify-content: space-between;
+} 
+
+/* LEFT SIDE TITLE OF PARAGRAPH */
+#leftSideDescriptionTitle{
+    font-size: 28px;
+    font-weight: 700;
+    display: flex;
+}
+
+
+/* RIGHT SIDE ABOUT US SECTION */
+
+
+/* ABOUT US RIGHT IMAGES DIVS */
+.aboutUsImages{
+    margin-top: 5%;
+}
+
+
+
+/* FIRST IMAGE DIV */
+#aboutUsImageFirst{
+    text-align: center;
+    margin-top: 10%;
+    width: 33.33%;
+    float: left;
+}
+
+/* SECOND IMAGE DIV */
+#aboutUsImageSecond{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10%;
+    width: 33.33%;
+}
+
+/* THIRD IMAGE DIV */
+#aboutUsImageThird{
+    text-align: center;
+    margin-top: 10%;
+    width: 33.33%;
+    float: right;
+}
+
+/* DESIGNERS'S IMAGES */
+.AUImages{
+    border-radius: 50%;
+    border: 5px solid rgba(228, 228, 228, 255);
+}
+
+/* THE NAME OF THE DESIGNERS */
+.AUTitleDesigner{
+    display: flex;
+    justify-content:center;
+    font-weight: bold;
+}
+
+/* EVERY DESIGNER DESCRIPTION  */
+.AUDescriptionDesigner{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 711px) {
+    .aboutUsImages {
+        display: flex;
+        flex-direction: column;
+        margin-left: 30%;
+    }
+}
+
+@media (max-width: 320px) {
+    #leftSide {
+        font-size: small;
+    }
+}

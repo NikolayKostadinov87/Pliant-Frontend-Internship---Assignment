@@ -1,0 +1,186 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: Tahoma, Verdana, sans-serif;
+}
+
+/* DIV HOME PAGE CONTAINER  */
+#homePageContainer{
+    background-image: url('HomePageBackgroundImage.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+/* NAVIGATION BAR */
+nav{
+    /* border-style: solid; */
+    background-color: transparent;
+    width: 100%;
+    height: 15vh;
+}
+
+/* THE LOGO PICTURE */
+#logoPicture{ 
+    float: left;
+    margin-top: 2%;
+    margin-left: 10%;
+    height: 35%;
+}
+
+/* SHIFTING THE MENU TO RIGHT POSITION */
+nav ul {
+    float: right;
+    margin-right: 5%;
+}
+
+/* THE MENU LIST ELEMENTS WILL BE ON ONE LINE */
+nav ul li {
+    display: inline-block;
+    margin-top: 2%; 
+}
+
+/*  COLOR , SIZE , UPPERCASE PROPERTIES OF MENU ELEMENTS*/
+nav ul li a {
+    color:white;
+    text-transform: uppercase;
+    font-size: 27px;
+}
+
+/* REMOVING LINK LINES UNDER THE WORDS */
+a:link{
+    text-decoration: none;
+}
+
+/* HAMBURGER BUTTON */
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+/* HIDE INPUT BUTTON FOR THE HAMBURGER BUTTON */
+#check {
+    display: none;
+}
+
+/* PROPERTIES WHEN THE SCREEN IS SMALLER THAN 1050PX */
+@media (max-width: 1050px) {
+
+    /* DISPLAYING HAMBURGER BUTTON ON SCREEN*/
+    .checkbtn {
+        display: block;
+    }
+
+    /* MENU ON SMALLER SIZE SCREENS */
+    ul {
+        overflow:scroll;
+        position: absolute;
+        height: 85vh;
+        width: 100%;
+        background: #2c3e50;
+        top: 15vh;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+        z-index: 100;
+    }
+    
+    /* DISPLAYING ELEMENTS OF THE MENU */
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    /* SIZE OF EACH ELEMENT A */
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    /* WHEN CLICKED EACH ELEMENT BECOMES LIGHT GREY */
+    a:hover {
+        color: rgba(47, 172, 108, 255)
+    }
+
+
+    /* WHEN THE INPUT BUTTON (THE CHECK BUTTON) IS CLICKED */
+    #check:checked~ul {
+        position: absolute;
+        left: 0%;
+    }
+}
+
+/* LOGIN BUTTON */
+.loginButton{
+    background-color: rgba(33, 66, 74, 255);
+    color: white;
+    position: absolute;
+    text-align: center;
+    width: 55%;
+    bottom: 0%;
+    height: 10%;
+}
+
+/* CUTTING BOTTOM RIGHT PART OF THE BUTTON */
+#loginButton{
+    clip-path: polygon(0 0, 100% 0, 97% 100%, 0 100%);
+}
+
+/* REGISTER BUTTON */
+.registerButton{
+    background-color: rgba(47, 172, 108, 255);
+    color: white;
+    position: absolute;
+    text-align: center;
+    width: 51%;
+    left: 50%;
+    bottom: 0%;
+    height: 10%;
+}
+
+/* CUTTING UPPER LEFT PART OF THE BUTTON */
+#registerButton{
+    clip-path: polygon(3% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+
+
+/* WELCOMING MESSAGES ON THE HOME PAGE DIVS */
+.messageHomePage{
+    color: white;
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+/* DIV OF THE CENTER BIG TEXT */
+#centerTextPrimary {
+    font-size: 6vh;
+    top: 50%;
+    left: 50%;
+}
+
+/* DIV OF THE FIRST SECONDARY TEXT */
+#centerTextFirstSecondary {
+    font-size: 3vh;
+    top: 57%;
+    left: 50%;
+    font-style: italic;
+}
+
+/* DIV OF THE SECOND SECONDARY TEXT */
+#centerTextSecondSecondary {
+    font-size: 3vh;
+    top: 63%;
+    left: 50%;
+    font-style: italic;
+}

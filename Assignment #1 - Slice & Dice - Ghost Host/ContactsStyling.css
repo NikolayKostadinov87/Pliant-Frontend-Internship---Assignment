@@ -1,0 +1,148 @@
+
+/* MAIN DIV CONTAINER*/
+#contactsSectionMainDivId{
+    color:rgba(89, 89, 89, 255)
+}
+
+/* MAIN DIV CONTAINER*/
+#contactsSectionMainDivId{
+    height: 50vh;
+    width: 100%;
+    background-color: rgba(42, 42, 42, 255);
+}
+
+/* LEFT SECTION DIV */
+#contactsLeftSection{
+    float:left;
+    width: 33.33%;
+    align-items: flex-start;
+}
+
+/* RIGHT SECTION DIV */
+#contactsRightSection{
+    float: right;
+    width: 33.33%;
+}
+
+/* CENTER SECTION DIV */
+#contactsCenterSection{
+    margin: 0 auto;
+    width: 33.33%;
+}
+
+
+
+/* LEFT SECTION  PROPERTIES */
+#contactsLeftSectionDescription{
+    margin-left: 20%;
+    margin-top: 20%;
+    display: flex;
+    vertical-align: middle;
+}
+
+#contactsLeftSectionDesigner{
+    display: flex;
+    margin-left: 20%;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+/* CENTER SECTION  PROPERTIES*/
+
+/* LEFT COLUMN */
+#contactsCenterSection{
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 6%;
+    justify-content: start;
+}
+
+#contactsCenterLeftColumn{
+    float: left;
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 10%;
+    margin-bottom: 6%;
+}
+
+/* BUTTONS WHEN CLICKED PROPERTIES */
+#spanSupport:hover,
+#spanAccount:hover,
+#spanProductCatalog:hover,
+#spanShortCodes:hover,
+#spanSiteMap:hover,
+#spanWhoisSearch:hover,
+#spanWebMail:hover,
+#spanFindDomain:hover{
+    transition: .3s;
+    color: white;
+}
+
+/* REMOVING HREF UNDERLINE COLOR */
+#contactsRightSectionMail,
+#contactsRightSectionPhone{
+    text-decoration: none;
+}
+
+a{
+    color: inherit;
+}
+
+/* BUTTONS CHANGING COLOR WHEN CLICKED */
+#contactsRightSectionMail:hover,
+#contactsRightSectionPhone:hover{
+    transition: .8s;
+    color: white;
+    text-decoration: none;
+}
+#contactsLeftSectionDesigner{
+    transition: 1.1s;
+    opacity: 0.3;
+    color: white;
+}
+#contactsLeftSectionDesigner:hover{
+    opacity: 1;
+}
+
+
+/* RIGHT COLUMN */
+
+#contactsCenterRightColumn{
+    float: right;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* RIGHT SECTION */
+.contactsRightSectionElements{
+    display: flex;
+    margin-left: 15%;
+    vertical-align: middle;
+}
+
+#contactsRightSection{
+    margin-top: 7%;
+}
+
+.fa-solid{
+    margin-right: 5%;
+}
+
+/* SCREEN LESS THAN 845PX PROPERTIES */
+@media (max-width: 845px){
+    #contactsCenterRightColumn {
+        float: left;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    #contactsCenterSection {
+        padding-left: 12%;
+        padding-right: 3%;
+        padding-top: 6%;
+        justify-content: start;
+    }
+}
